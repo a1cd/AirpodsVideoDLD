@@ -1,7 +1,7 @@
 
 if ! command -v ffmpeg &> /dev/null
 then
-    which -s brew
+    which brew
     if [[ $? != 0 ]] ; then
         # Install Homebrew
         sudo ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
