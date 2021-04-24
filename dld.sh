@@ -1,8 +1,7 @@
 
 if ! command -v ffmpeg &> /dev/null
 then
-    which brew
-    if [[ $? != 0 ]] ; then
+    if ! command -v brew &> /dev/null
         # Install Homebrew
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     else
