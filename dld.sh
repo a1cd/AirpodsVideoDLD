@@ -3,9 +3,9 @@ if ! command -v ffmpeg &> /dev/null
 then
     if ! command -v brew &> /dev/null; then
         # Install Homebrew
-        sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     else
-        sudo brew update
+        brew update
     fi
     brew install ffmpeg
 else
