@@ -1,5 +1,4 @@
 
-which -s brew
 if ! command -v ffmpeg &> /dev/null
 then
     which -s brew
